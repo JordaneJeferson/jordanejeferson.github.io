@@ -1,0 +1,181 @@
+/* Estilo geral */
+body {
+  font-family:"share tech", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('Backgroudsite-3840.jpeg'); /* Caminho da sua imagem */
+  background-repeat: repeat; /* Repete a imagem em ambas as direções */
+  background-attachment: fixed; /* A imagem fixa na tela e não rola */
+  background-size: cover; /* A imagem cobre todo o fundo sem distorção */
+  
+}
+
+header {
+ 
+  padding: 20px;
+  text-align: center;
+  
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #000000; /* Dourado */
+  margin-right: 1vh;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+    justify-content: center;
+  }
+
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    color: #ffffff;
+    font-size: 5vh;
+    text-shadow: 3px 3px 5px #000000;
+}
+
+nav a:hover {
+  color: #000000; /* Dourado */
+}
+
+/* Seção de Abertura */
+#inicio {
+  padding: 40px;
+  
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+#inicio h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #ffffff; /* Dourado */
+  margin-left: calc(50% - (50%));
+  text-align: center;
+  text-shadow: 3px 3px 5px #000000;
+}
+
+#inicio p {
+  line-height: 2.0;
+  color: #ffffff;
+  font-size: 4vh;
+  text-align:center;
+  margin-left: 25%;
+  margin-right: 25%;
+  text-shadow: 3px 3px 5px #000000;
+  }
+.botao {
+  display: flex; /* Permite alinhar imagem e texto */
+  padding: 20px 20px; /* Aumenta o padding */
+  background-color: #333; /* Verde */
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border: none;
+  border-radius: 25px;
+  transition: background-color 0.3s;
+  font-size: 20px; /* Aumenta o tamanho da fonte */
+  width: 20%;
+  margin: 0 auto;
+  
+}
+
+.botao img {
+  margin-right: 6%; /* Espaço entre imagem e texto */
+  height: 2vw; /* Ajusta a altura da imagem */
+  margin-left: 3%; /* Espaço entre a margem e imagem */
+  
+  
+}
+
+.botao:hover {
+  background-color: #ffffff; /* Verde escuro */
+}
+
+
+/* Seção de Foto */
+#foto {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.foto-container {
+  flex: 1;
+  text-align: center;
+}
+
+.foto-container img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilos responsivos */
+@media (max-width: 425px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin-bottom: 10px;
+  }
+
+  #inicio, #foto {
+    flex-direction: column;
+  }
+
+  .foto-container img {
+    max-width: 100%;
+  }
+}
+
+/* Animação de alternância de cores */
+.alternar-cor {
+  animation: alternar-cor 2s infinite;
+}
+
+@keyframes alternar-cor {
+  0% {
+    color: #f7b800; /* Dourado */
+  }
+  50% {
+    color: #fff; /* Branco */
+  }
+  100% {
+    color: #f7b800; /* Dourado */
+  }
+}
+
+/* Aplicação da animação */
+h2.alternar-cor {
+  animation: alternar-cor 2s infinite;
+}
+
+p.alternar-cor {
+  animation: alternar-cor ;
+}
